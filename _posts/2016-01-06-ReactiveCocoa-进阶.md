@@ -3,55 +3,48 @@ layout:     post
 title:      我的简历
 subtitle:   for me
 date:       2018-05-01
-author:     BY
+author:     zans-lb
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - iOS
-    - ReactiveCocoa
-    - 函数式编程
-    - 开源框架
+    - for me
+    - 我的简历
 ---
 # 前言
 
->在[上篇文章](http://qiubaiying.github.io/2016/12/26/ReactiveCocoa-基础/)中介绍了**ReactiveCocoa**的基础知识,接下来我们来深入介绍**ReactiveCocoa**及其在**MVVM**中的用法。
+>目前正处于求职期，欢迎HR拜访 
+>
+>Email： <email> zans.lb@foxmail.com </email>
 
-# 常见操作方法介绍
+# 掌握的技能
 
 
-#### 操作须知
+#### 前    端
+1. HTML+CSS
+2. JavaScript脚本语言
+3. jQuery
+4. Ajax
+#### 框架
+1. ThinkPHP
+2. Yii
 
-所有的信号（RACSignal）都可以进行操作处理，因为所有操作方法都定义在RACStream.h中，因此只要继承RACStream就有了操作处理方法。
-#### 操作思想
+#### 数 据 库
+1. MySQL
 
-运用的是Hook（钩子）思想，Hook是一种用于改变API(应用程序编程接口：方法)执行结果的技术.
+#### 模板引擎 
+1. Smarty
+2. ThinkTemplate
+#### 操作系统 
+1. 熟悉Linux操作系统，有搭建LAMP环境经验
+#### 二次开发
+1. 熟悉 微信公众号 开发，能够使用SDK开发微信公众号
+#### 缓    存
+1. 有使用Memcache经验，对页面静态化有一定了解
+#### 其    它
+1. 熟悉Git版本控制器进行团队开发
+2. 熟悉sphinx搜索引擎
+3. 对SEO优化、大型网站架构有一定的了解。
 
-Hook用处：截获API调用的技术。
-
-有关Hook的知识可以看我的这篇博客[《Objective-C Runtime 的一些基本使用》](http://www.jianshu.com/p/ff114e69cc0a)中的 *更换代码的实现方法* 一节,
-
-Hook原理：在每次调用一个API返回结果之前，先执行你自己的方法，改变结果的输出。
-
-#### 操作方法
-
-#### **bind**（绑定）- ReactiveCocoa核心方法
-
-**ReactiveCocoa** 操作的核心方法是 **bind**（绑定）,而且也是RAC中核心开发方式。之前的开发方式是赋值，而用RAC开发，应该把重心放在绑定，也就是可以在创建一个对象的时候，就绑定好以后想要做的事情，而不是等赋值之后在去做事情。
-
-列如，把数据展示到控件上，之前都是重写控件的 `setModel` 方法，用RAC就可以在一开始创建控件的时候，就绑定好数据。
-
-- **作用**
-
-	RAC底层都是调用**bind**， 在开发中很少直接使用 **bind** 方法，**bind**属于RAC中的底层方法，我们只需要调用封装好的方法，**bind**用作了解即可.
-
-- **bind方法使用步骤**
-     1. 传入一个返回值 `RACStreamBindBlock` 的 block。
-     2. 描述一个 `RACStreamBindBlock` 类型的 `bindBlock`作为block的返回值。
-     3. 描述一个返回结果的信号，作为 `bindBlock` 的返回值。
-     
-     注意：在bindBlock中做信号结果的处理。
-- 	**bind方法参数**
-	
 
 
 
